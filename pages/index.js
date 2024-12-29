@@ -105,14 +105,14 @@ export default function App() {
     }
     .card {
       width: 80px;
-      height: 120px;
+      height: 112px;
       margin-bottom: 10px;
       margin-right: 10px;
     }
     .c {
       position: absolute;
       max-width: 80px;
-      max-height: 120px;
+      max-height: 112px;
       width: 30ch;
       height: 30ch;
       cursor: pointer;
@@ -160,7 +160,7 @@ export default function App() {
       }
     }
 
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 560px) {
       #cards {
         width: ${140*4-10}px;
         margin: 0 auto;
@@ -197,7 +197,153 @@ export default function App() {
       }
     }
 
-    @media only screen and (min-width: 560px) {
+    @media only screen and (min-width: 720px) {
+      #cards {
+        width: ${142*5-10}px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 130px;
+        height: 177px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+      }
+      .card:not(:nth-child(5n)) {
+        width: 130px;
+        height: 177px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      .c {
+        position: absolute;
+        max-width: 130px;
+        max-height: 177px;
+        width: 130px;
+        height: 177px;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        will-change: transform, opacity;
+      }
+      .logo-div {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 880px) {
+      #cards {
+        width: ${142*6-10}px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 130px;
+        height: 177px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+      }
+      .card:not(:nth-child(6n)) {
+        width: 130px;
+        height: 177px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      .c {
+        position: absolute;
+        max-width: 130px;
+        max-height: 177px;
+        width: 130px;
+        height: 177px;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        will-change: transform, opacity;
+      }
+      .logo-div {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 1030px) {
+      #cards {
+        width: ${156*options-14}px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 134px;
+        height: 186px;
+        margin-bottom: 14px;
+        margin-right: 0px;
+      }
+      .card:not(:nth-child(${options}n)) {
+        width: 134px;
+        height: 186px;
+        margin-bottom: 14px;
+        margin-right: 14px;
+      }
+      .c {
+        position: absolute;
+        max-width: 134px;
+        max-height: 186px;
+        width: 134px;
+        height: 186px;
+        cursor: pointer;
+        border-radius: 9px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 14px 0 rgba(0, 0, 0, 0.19);
+        will-change: transform, opacity;
+      }
+      .logo-div {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 1180px) {
+      #cards {
+        width: ${170*options-20}px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 150px;
+        height: 210px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+      }
+      .card:not(:nth-child(${options}n)) {
+        width: 150px;
+        height: 210px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      .c {
+        position: absolute;
+        max-width: 180px;
+        max-height: 252px;
+        width: 150px;
+        height: 210px;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        will-change: transform, opacity;
+      }
+      .logo-div {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 1390px) {
       #cards {
         width: ${200*options-20}px;
         margin: 0 auto;
